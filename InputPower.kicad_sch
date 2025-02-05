@@ -968,102 +968,12 @@
 				)
 			)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "pwr"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-		)
+	)
+	(junction
+		(at 149.86 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07e19373-a630-4b81-ad88-e5810de202e4")
 	)
 	(junction
 		(at 96.52 76.2)
@@ -1072,22 +982,16 @@
 		(uuid "320434b1-6870-4d32-8db9-07fc33d60192")
 	)
 	(junction
-		(at 181.61 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3707b993-753e-4859-b3c4-1394a5bc4c2c")
-	)
-	(junction
 		(at 132.08 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "512d62ef-21ba-4000-9aaf-4764ca01bd90")
 	)
 	(junction
-		(at 129.54 88.9)
+		(at 104.14 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "72f3ed6a-4f2f-401e-bc43-6e61892580c9")
+		(uuid "8a8564ca-43e5-4443-82f3-faa7ae4688b7")
 	)
 	(junction
 		(at 185.42 73.66)
@@ -1107,21 +1011,9 @@
 		(color 0 0 0 0)
 		(uuid "ad44ecdd-3281-430c-8c47-b1ad451b84ba")
 	)
-	(junction
-		(at 106.68 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5ea55a6-d749-4a2f-9cec-ebcd8c466336")
-	)
-	(junction
-		(at 119.38 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e5a77e51-2ac7-45c1-8b4c-e64c3ac48f2a")
-	)
 	(wire
 		(pts
-			(xy 132.08 99.06) (xy 132.08 104.14)
+			(xy 132.08 101.6) (xy 132.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1131,7 +1023,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 73.66) (xy 106.68 73.66)
+			(xy 96.52 73.66) (xy 149.86 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1161,16 +1053,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 54.61) (xy 110.49 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13253d1d-52c2-4618-8daa-e9c3e5970819")
-	)
-	(wire
-		(pts
 			(xy 95.25 73.66) (xy 96.52 73.66)
 		)
 		(stroke
@@ -1178,6 +1060,26 @@
 			(type default)
 		)
 		(uuid "1b8df834-93b9-4048-ad13-4b51e2ab40c7")
+	)
+	(wire
+		(pts
+			(xy 149.86 73.66) (xy 154.94 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c9a3c68-46c7-4d7c-ab16-59bca5fc7543")
+	)
+	(wire
+		(pts
+			(xy 104.14 88.9) (xy 105.41 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e1965ab-c5a6-45ed-9362-7170acedfba0")
 	)
 	(wire
 		(pts
@@ -1231,16 +1133,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 54.61) (xy 110.49 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d8ef546-14db-4a7c-9c9e-d6abd45b65a2")
-	)
-	(wire
-		(pts
 			(xy 185.42 83.82) (xy 185.42 90.17)
 		)
 		(stroke
@@ -1251,23 +1143,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 88.9) (xy 129.54 88.9)
+			(xy 125.73 88.9) (xy 132.08 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f31a870-3913-408b-bcf1-e762e7ee2ae3")
-	)
-	(wire
-		(pts
-			(xy 106.68 54.61) (xy 106.68 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e0474c9-59c2-4d27-950d-806bfc3e7f89")
 	)
 	(wire
 		(pts
@@ -1281,33 +1163,33 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 68.58) (xy 106.68 73.66)
+			(xy 149.86 86.36) (xy 149.86 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f74e30e-c742-4578-b517-4efc0e3c8b06")
+		(uuid "8be6fc26-8870-429c-b203-6c885fd7a3a0")
 	)
 	(wire
 		(pts
-			(xy 175.26 73.66) (xy 181.61 73.66)
+			(xy 149.86 73.66) (xy 149.86 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a44e99b1-02a6-4e32-bf1e-67e4e187e62b")
+		(uuid "95bc1c5c-46d3-43ae-8694-640309d0fa36")
 	)
 	(wire
 		(pts
-			(xy 119.38 73.66) (xy 154.94 73.66)
+			(xy 104.14 101.6) (xy 104.14 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a76446a9-819d-499d-a275-42ca47e4f35c")
+		(uuid "9e73953f-92a4-43c1-a17c-5b8260916cbd")
 	)
 	(wire
 		(pts
@@ -1321,17 +1203,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 88.9) (xy 132.08 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4cbc22e-32a7-49fb-b61a-a8dcce331ac7")
-	)
-	(wire
-		(pts
-			(xy 181.61 73.66) (xy 185.42 73.66)
+			(xy 175.26 73.66) (xy 185.42 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1351,6 +1223,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 88.9) (xy 104.14 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1dc8517-6c5e-4dad-8b87-8293bfe7170d")
+	)
+	(wire
+		(pts
 			(xy 138.43 88.9) (xy 138.43 82.55)
 		)
 		(stroke
@@ -1361,17 +1243,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 73.66) (xy 119.38 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7632fd1-4485-4979-abba-ffd785a67dd0")
-	)
-	(wire
-		(pts
-			(xy 96.52 88.9) (xy 105.41 88.9)
+			(xy 96.52 88.9) (xy 104.14 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1381,7 +1253,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 88.9) (xy 132.08 91.44)
+			(xy 132.08 88.9) (xy 132.08 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1400,8 +1272,8 @@
 		(uuid "e1a5695c-d17b-42dd-bfe1-8cdab079d96e")
 	)
 	(rectangle
-		(start 81.28 67.31)
-		(end 100.33 130.81)
+		(start 78.74 67.31)
+		(end 97.79 130.81)
 		(stroke
 			(width 0)
 			(type default)
@@ -1426,7 +1298,7 @@
 	)
 	(text "Incoming 12VDC"
 		(exclude_from_sim no)
-		(at 83.82 101.6 0)
+		(at 80.518 93.726 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1434,6 +1306,72 @@
 			(justify left bottom)
 		)
 		(uuid "db8d0a51-6aa4-449b-bd0d-e91932ae34d2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "055da724-f8e2-4305-9112-2a4ee384b997")
+		(property "Reference" "#PWR041"
+			(at 104.14 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "759619b5-eb0a-4caa-a65b-e47b57226355")
+		)
+		(instances
+			(project "RoboCone Sensor Chamber"
+				(path "/4cbd4305-2804-444f-9b01-a0e20ec81091/9cf577e5-f371-4d94-be28-cd034d4af0a1"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1496,72 +1434,6 @@
 			(project "RoboCone Sensor Chamber"
 				(path "/4cbd4305-2804-444f-9b01-a0e20ec81091/9cf577e5-f371-4d94-be28-cd034d4af0a1"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 181.61 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0da3e96c-567f-44ae-a7b0-400c51720463")
-		(property "Reference" "#FLG08"
-			(at 181.61 71.755 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 181.61 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a4c05d4-24eb-4da1-b4b5-0f974ac9d577")
-		)
-		(instances
-			(project "RoboCone Sensor Chamber"
-				(path "/4cbd4305-2804-444f-9b01-a0e20ec81091/9cf577e5-f371-4d94-be28-cd034d4af0a1"
-					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -2008,7 +1880,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 132.08 95.25 180)
+		(at 132.08 97.79 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2016,7 +1888,7 @@
 		(dnp no)
 		(uuid "6e82ce17-077e-4837-babc-05dec6db4572")
 		(property "Reference" "C8"
-			(at 129.54 92.71 90)
+			(at 129.54 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +1896,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 129.54 100.33 90)
+			(at 129.54 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2032,7 +1904,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 131.1148 91.44 0)
+			(at 131.1148 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2041,7 +1913,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 95.25 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2050,7 +1922,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 95.25 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2059,7 +1931,7 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 132.08 95.25 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2077,72 +1949,6 @@
 			(project "RoboCone Sensor Chamber"
 				(path "/4cbd4305-2804-444f-9b01-a0e20ec81091/9cf577e5-f371-4d94-be28-cd034d4af0a1"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 119.38 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "766ba7b7-e9ee-4dc3-9a8f-c38f7d2f35c2")
-		(property "Reference" "#FLG05"
-			(at 119.38 71.755 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 119.38 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c47f7d56-c8e1-4e93-81f3-2c5b8c95fd9f")
-		)
-		(instances
-			(project "RoboCone Sensor Chamber"
-				(path "/4cbd4305-2804-444f-9b01-a0e20ec81091/9cf577e5-f371-4d94-be28-cd034d4af0a1"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -2295,7 +2101,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 55.88 0)
+		(at 149.86 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2304,7 +2110,7 @@
 		(fields_autoplaced yes)
 		(uuid "826206ec-6cf5-4f12-abff-b0fbb63a36bc")
 		(property "Reference" "#PWR027"
-			(at 110.49 62.23 0)
+			(at 149.86 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2313,7 +2119,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 60.96 0)
+			(at 149.86 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2321,7 +2127,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 55.88 0)
+			(at 149.86 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2330,7 +2136,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 55.88 0)
+			(at 149.86 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2339,7 +2145,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 55.88 0)
+			(at 149.86 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2503,7 +2309,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 106.68 64.77 180)
+		(at 149.86 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2511,7 +2317,7 @@
 		(dnp no)
 		(uuid "c302ce78-1e86-40f2-b252-6ca6088e3862")
 		(property "Reference" "C7"
-			(at 104.14 62.23 90)
+			(at 147.32 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2519,7 +2325,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 104.14 69.85 90)
+			(at 147.32 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2527,7 +2333,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 105.7148 60.96 0)
+			(at 148.8948 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2536,7 +2342,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 64.77 0)
+			(at 149.86 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2545,7 +2351,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 64.77 0)
+			(at 149.86 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2554,7 +2360,7 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 106.68 64.77 0)
+			(at 149.86 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2740,34 +2546,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 129.54 88.9 0)
+		(lib_id "Device:C")
+		(at 104.14 97.79 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc459eaa-408b-4734-a8db-be596def79ab")
-		(property "Reference" "#FLG07"
-			(at 129.54 86.995 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 129.54 83.82 0)
+		(uuid "e09d2842-a9ef-41d1-8b04-c436b8039469")
+		(property "Reference" "C22"
+			(at 101.6 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 129.54 88.9 0)
+		(property "Value" "100nF"
+			(at 101.6 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 103.1748 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +2580,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 88.9 0)
+			(at 104.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2589,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 88.9 0)
+			(at 104.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2793,13 +2597,25 @@
 				(hide yes)
 			)
 		)
+		(property "Purpose" ""
+			(at 104.14 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4ca62008-fc16-44ff-b501-87312bb545b1")
+		)
 		(pin "1"
-			(uuid "acaaaf7d-4f73-4dd5-9d18-a12a879d45da")
+			(uuid "5609325b-429b-438d-a61f-5470f2cfb09d")
 		)
 		(instances
 			(project "RoboCone Sensor Chamber"
 				(path "/4cbd4305-2804-444f-9b01-a0e20ec81091/9cf577e5-f371-4d94-be28-cd034d4af0a1"
-					(reference "#FLG07")
+					(reference "C22")
 					(unit 1)
 				)
 			)

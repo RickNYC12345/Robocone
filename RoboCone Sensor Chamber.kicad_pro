@@ -461,7 +461,32 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "AINN11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "AINN12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "AINN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Input Power/V SUPPLY IN BOTH"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "DRDY{slash}DOUT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

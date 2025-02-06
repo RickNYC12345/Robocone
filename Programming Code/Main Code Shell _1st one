@@ -1,0 +1,80 @@
+const int ADS_DOUT = 2;  // Connect to ADS1234's DOUT pin
+const int ADS_SCLK = 3;  // Connect to ADS1234's SCLK pin
+const int ADS_PDWN = 4;  // Connect to ADS1234's PDWN pin
+const int ADS_A0 = 5;    // Connect to ADS1234's A0 pin
+const int ADS_A1 = 6;    // Connect to ADS1234's A1 pin
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ADS_DOUT, INPUT);
+  pinMode(ADS_SCLK, OUTPUT);
+  pinMode(ADS_PDWN, OUTPUT);
+  pinMode(ADS_A0, OUTPUT);
+  pinMode(ADS_A1, OUTPUT);
+
+  // Initialize ADS1234
+  digitalWrite(ADS_PDWN, HIGH); // Power up
+  delay(100); // Allow time for stabilization
+}
+
+long readADS1234() {
+  long data = 0;
+
+  // Wait until DOUT goes low (data ready)
+  while (digitalRead(ADS_DOUT) == HIGH);
+
+  // Read 24 bits of data
+  for (int i = 0; i < 24; i++) {
+    digitalWrite(ADS_SCLK, HIGH);
+    delayMicroseconds(1);
+    data = (data << 1) | digitalRead(ADS_DOUT);
+    digitalWrite(ADS_SCLK, LOW);
+    delayMicroseconds(1);
+  }
+
+  // Cycle clock for channel/pga updates (if needed)
+  digitalWrite(ADS_SCLK, HIGH);
+  delayMicroseconds(1);
+  digitalWrite(ADS_SCLK, LOW);
+
+  return data;
+}
+
+void selectChannel(int channel) {
+  switch (channel) {
+    case 1:
+      digitalWrite(ADS_A1, LOW);
+      digitalWrite(ADS_A0, LOW);
+      break;
+    case 2:
+      digitalWrite(ADS_A1, LOW);
+      digitalWrite(ADS_A0, HIGH);
+      break;
+    case 3:
+      digitalWrite(ADS_A1, HIGH);
+      digitalWrite(ADS_A0, LOW);
+      break;
+    case 4:
+      digitalWrite(ADS_A1, HIGH);
+      digitalWrite(ADS_A0, HIGH);
+      break;
+    default:
+      // Invalid channel, default to Channel 1
+      digitalWrite(ADS_A1, LOW);
+      digitalWrite(ADS_A0, LOW);
+      break;
+  }
+  delay(10); // Allow time for channel switching
+}
+
+void loop() {
+  for (int channel = 1; channel <= 4; channel++) {
+    selectChannel(channel); // Select the channel
+    long rawValue = readADS1234(); // Read the ADC value
+    Serial.print("Channel ");
+    Serial.print(channel);
+    Serial.print(" Raw Value: ");
+    Serial.println(rawValue);
+  }
+  delay(100); // Delay between readings
+}

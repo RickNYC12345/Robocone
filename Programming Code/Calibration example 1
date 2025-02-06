@@ -1,0 +1,15 @@
+long zeroLoadValues[4] = {0, 0, 0, 0}; // Zero-load values for each channel
+float scaleFactors[4] = {0.001, 0.001, 0.001, 0.001}; // Scale factors for each channel
+
+void loop() {
+  for (int channel = 1; channel <= 4; channel++) {
+    selectChannel(channel);
+    long rawValue = readADS1234();
+    float calibratedValue = (rawValue - zeroLoadValues[channel - 1]) * scaleFactors[channel - 1];
+    Serial.print("Channel ");
+    Serial.print(channel);
+    Serial.print(" Calibrated Value: ");
+    Serial.println(calibratedValue);
+  }
+  delay(100);
+}
